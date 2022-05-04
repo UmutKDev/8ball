@@ -36,8 +36,8 @@ const Index = ({ }) => {
   const answer = possibleAnswers[randomIndex];
 
   return (
-    <div className='h-screen w-screen flex justify-center items-center'>
-      <div className={`contianer absolute max-w-8/12 w-8/12 max-h-5/6 h-5/6 border-2 border-gray-200 border-opacity-30 rounded flex items-center justify-center flex-col flex-wrap ${answer ? "space-y-6" : "space-y-10"}`}>
+    <div className='h-screen w-screen flex justify-center items-center flex-col'>
+      <div className={`contianer absolute max-w-6/12 w-6/12 max-h-5/6 h-5/6 border-2 border-gray-200 border-opacity-30 rounded flex items-center justify-center flex-col flex-wrap ${answer ? "space-y-6" : "space-y-10"}`}>
         {answer ?
           <>
             <div>
