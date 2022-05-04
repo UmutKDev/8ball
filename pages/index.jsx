@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Image from 'next/image'
 
-const Index = ({}) => {
+const Index = ({ }) => {
 
   const [userInput, setUserInput] = useState('');
   const [randomIndex, setRandomIndex] = useState('');
@@ -31,35 +31,8 @@ const Index = ({}) => {
     setError('');
   }
 
-  var answersS;
+  const possibleAnswers = ["Çok şüpheli", "Konsantre ol ve tekrar sor", "Kesinlikle öye", "Belirtiler olduğu yönde", "Gördüğüm Kadarıyla, evet", "Kaynaklarım hayır diyor", "Biraz belirsiz tekrar dene", "Kuşkusuz", "Bana güvenebilirsin", "Yanıtım hayır", "Dışarıdan iyi görünüyor", "Pek iyi görünmüyor", "Sonra tekrar dene", "Şimdi tahmin edemem", "Çoğunlukla", "Şimdi söylemesem daha iyi", "Kesinlikle", "Evet", "Evet, elbette", "Milyon yıl geçse bile hayır", "Hayır!"]
 
-  fetch(`https://jsonplaceholder.typicode.com/todos/1`).then(response => response.json()).then(data => {
-    answersS = data;
-    console.log(answersS);
-  });
-
-  const possibleAnswers = [
-    'It is certain',
-    'It is decidedly so',
-    'Without a doubt',
-    'Yes, definitely',
-    'You may rely on it',
-    'As I see it, yes',
-    'Outlook good',
-    'Yes',
-    'Signs point to yes',
-    'Reply hazy try again',
-    'Ask again later',
-    'Better not tell you now',
-    'Cannot predict now',
-    'Concentrate and ask again',
-    'Don\'t count on it',
-    'My reply is no',
-    'My sources say no',
-    'Most likely',
-    'Outlook not so good',
-    'Very doubtful'
-  ];
   const answer = possibleAnswers[randomIndex];
 
   return (
@@ -72,7 +45,7 @@ const Index = ({}) => {
             </div>
             <div className='relative flex justify-center'>
               <Image className='w-full max-w-[40em]' src='/answerside.png' width={550} height={434} />
-              <p className='absolute text-white top-[39%] left-[46%] text-xs w-[11%] text-[80%] uppercase text-center m-0'>{answer}</p>
+              <p className='absolute text-white top-[36%] left-[46%] text-xs w-[11%] text-[80%] uppercase text-center m-0'>{answer}</p>
             </div>
             <div>
               <button type="button" className="text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-base px-5 py-2.5 text-center mb-2" onClick={erase}>Geri Dön!</button>
@@ -98,18 +71,3 @@ const Index = ({}) => {
 }
 
 export default Index;
-
-// export async function getServerSideProps() {
-
-//   const response = await fetch(`https://raw-api.vercel.app/api/json/8ball?soru=${"sa"}&key=test`)
-
-//   const data = await response.json()
-
-
-//   console.log(data)
-//   return {
-//     props: {
-//       data
-//     }
-//   }
-// }
