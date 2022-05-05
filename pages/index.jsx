@@ -67,38 +67,6 @@ const Index = ({ }) => {
         }
       </div>
     </div>
-    // <div className='h-screen w-screen flex justify-center items-center flex-col p-40'>
-    //   <div className={`contianer absolute max-w-full w-full max-h-full h-full border-2 border-gray-200 border-opacity-30 rounded flex items-center justify-center flex-col flex-wrap ${answer ? "space-y-6" : "space-y-10"}`}>
-    //     {answer ?
-    //       <>
-    //         <div>
-    //           <h1 className='text-3xl text-white'>İşte Cevabın...</h1>
-    //         </div>
-    //         <div className='relative flex justify-center'>
-    //           <img src='/answerside.png' />
-    //           {/* <Image className='w-full max-w-[40em]' src='/answerside.png' width={667} height={567} alt="answer" /> */}
-    //           <p className='absolute text-white top-[38%] left-[45%] text-xs w-[11%] text-[80%] uppercase text-center flex items-center justify-center'>{answer}</p>
-    //         </div>
-    //         <div>
-    //           <button type="button" className="text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-base px-5 py-2.5 text-center mb-2" onClick={erase}>Geri Dön!</button>
-    //         </div>
-    //       </>
-    //       :
-    //       <>
-    //         <div>
-    //           <h1 className='text-5xl text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-green-500 to-blue-500'>Sihirli Top</h1>
-    //         </div>
-    //         <div>
-    //           <img src='/8ball.png' width={300} draggable={false} alt="8ball" />
-    //         </div>
-    //         <div className='flex justify-center w-1/2 flex-wrap flex-row space-y-6'>
-    //           <input value={userInput} onChange={handleChange} type="text" className="text-sm rounded-lg  block w-full p-2.5 bg-neutral-600 border-gray-600 placeholder-gray-400 text-white focus:ring-blue-500 focus:border-blue-500" placeholder='İlerde evlenebilecekmiyim?' required />
-    //           <button type="button" className="text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-lg px-5 py-2.5 text-center mb-2" onClick={handleClick}>Topa Sor!</button>
-    //         </div>
-    //       </>
-    //     }
-    //   </div>
-    // </div>
   );
 }
 
