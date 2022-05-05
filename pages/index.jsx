@@ -52,7 +52,7 @@ const Index = ({ }) => {
                   <div><img className="w-48 rounded-full shadow-lg" src="/8ball.png" alt="Bonnie image" /></div>
                   <div><h5 className="text-xl font-medium text-gray-900 dark:text-white">Sihirli Top</h5></div>
                   <div><span className="text-sm text-gray-500 dark:text-gray-400">Kaderini Görmeye Hazırmısın?</span></div>
-                  <div><input value={userInput} onChange={handleChange} type="text" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="Gülsüm beni seviyor mu? ;)" required /></div>
+                  <div><input value={userInput} onChange={handleChange} type="text" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="O beni seviyor mu? ;)" required /></div>
                   <div><button type="button" className="text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-xs px-5 py-2.5 text-center mb-2" onClick={handleClick}>Topa Sor!</button></div>
                 </>
             }
